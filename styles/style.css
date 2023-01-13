@@ -1,0 +1,83 @@
+/* Important files and styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    --headerColor:#562EFF;
+    --bodyColor: #E5E5E5;
+    --headerPrimaryColor:white;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background:var(--bodyColor) ;
+}
+header{
+    background: var(--headerColor);
+}
+
+.header{
+    padding: 26px 285px;
+    display: flex;
+    justify-content: space-between;
+}
+.heading{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.header-heading{
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: var(--headerPrimaryColor);
+
+}
+.header-logo img{
+    height: 50px;
+    width: 40px;
+}
+
+.nav-item{
+    color: var(--headerPrimaryColor);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item li{
+    list-style-type: none;
+}
+
+
+
+
+
+/* --------------------
+    Responsive Design
+-----------------------*/
+/* Mobile Devices Width 576px */
+@media only screen and (max-width:576px) {
+    /* Header Section */
+    .header{
+        padding: 26px 50px;
+        flex-direction: column;
+    }
+    .header-heading{
+        font-size: 4.5vw;
+    }
+}
+
+/* Tablet and Landscape Devices Width min 577px
+   and maximum 992px */
+@media only screen and (min-width:577px) and (max-width:992px) {
+     /* Header Section */
+     .header{
+        padding: 10px 100px;
+        align-items: center;
+    }
+    .header-heading{
+        font-size: 4.5vw;
+    }
+}
