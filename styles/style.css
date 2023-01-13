@@ -1,52 +1,57 @@
 /* Important files and styles */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-:root{
-    --headerColor:#562EFF;
+:root {
+    --headerColor: #562EFF;
     --bodyColor: #E5E5E5;
-    --headerPrimaryColor:white;
+    --headerPrimaryColor: white;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background:var(--bodyColor) ;
+    background: var(--bodyColor);
 }
-header{
+
+header {
     background: var(--headerColor);
 }
 
-.header{
+.header {
     padding: 26px 285px;
     display: flex;
     justify-content: space-between;
 }
-.heading{
+
+.heading {
     display: flex;
     gap: 15px;
     justify-content: center;
     align-items: center;
 }
-.header-heading{
+
+.header-heading {
     font-size: 1.5vw;
     font-weight: bold;
     color: var(--headerPrimaryColor);
 
 }
-.header-logo img{
+
+.header-logo img {
     height: 50px;
     width: 50px;
 }
 
-.nav-item{
+.nav-item {
     color: var(--headerPrimaryColor);
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
 }
-.nav-item li{
+
+.nav-item li {
     list-style-type: none;
 }
 
@@ -54,105 +59,117 @@ header{
     Main Section
     section 01
 */
-.blogs{
+.blogs {
     margin: 30px 285px;
     background-color: var(--headerPrimaryColor);
     border-radius: 12px;
 }
 
-.blogs-heading{
+.blogs-heading {
     padding: 20px 100px;
     font-weight: bold;
     color: #562EFF;
     font-size: 1.2vw;
 }
-.top-player{
+
+.top-player {
     /* padding: 10px 20px; */
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
-.players{
+
+.players {
     font-weight: bold;
-    margin:20px 0;
+    margin: 20px 0;
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
 }
-.players .img img{
+
+.players .img img {
     height: 50px;
     width: 50px;
 }
 
-hr{
+hr {
     border: 2px solid rgb(160, 158, 158);
     margin: 0 100px;
 }
 
 /* section 01 second part */
-.top-blogSection{
+.top-blogSection {
     padding: 15px 100px;
     display: grid;
     gap: 25px;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
 }
-.blog-image img{
+
+.blog-image img {
     height: 117px;
     width: 177px;
     border-radius: 12px;
 }
 
-.top-blog1{
+.top-blog1 {
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
 }
-.blog-heading{
-    font-weight:bold;
+
+.blog-heading {
+    font-weight: bold;
 }
-.blog-author{
+
+.blog-author {
     margin-top: 20px;
     color: #5e585881;
 }
 
 
 /* Courses Section */
-.latest-couresall{
+.latest-couresall {
     padding: 20px 100px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     justify-content: center;
     align-items: center;
 }
-.course-image img{
+
+.course-image img {
     width: 100%;
 }
-.fa-solid{
+
+.fa-solid {
     color: rgb(244, 189, 9);
 }
-.rat-time{
+
+.rat-time {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
-.watch img{
+
+.watch img {
     display: flex;
     align-items: center;
     height: 20px;
     width: 20px;
 }
-.time{
+
+.time {
     display: flex;
     background-color: rgba(255, 0, 0, 0.326);
     border-radius: 30px;
     padding: 5px;
 }
-.real-time{
+
+.real-time {
     font-size: 12px;
     font-weight: bold;
     display: flex;
@@ -161,86 +178,101 @@ hr{
 
 
 /* Footer Section */
-footer{
+footer {
     padding: 55px 0;
     background-color: black;
     color: white;
 }
-.footer-logo{
+
+.footer-logo {
     display: flex;
     gap: 10px;
 }
-.footer-logo img{
+
+.footer-logo img {
     height: 50px;
     width: 40px;
 }
-.footer{
+
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1.2vw;
 }
-.footer-author a{
+
+.footer-author a {
     text-decoration: none;
     color: red;
 }
-.footer-author a:hover{
+
+.footer-author a:hover {
     color: yellowgreen;
 }
+
 /* --------------------
     Responsive Design
 -----------------------*/
 /* Mobile Devices Width 576px */
 @media only screen and (max-width:576px) {
+
     /* Header Section */
-    .header{
+    .header {
         padding: 26px 50px;
         flex-direction: column;
     }
-    .header-heading{
+
+    .header-heading {
         font-size: 4.5vw;
     }
 
     /* Main Section 01 */
-    .blogs{
+    .blogs {
         margin: 10px 5px;
     }
-    .top-player{
-        grid-template-columns: repeat(2,1fr);
+
+    .top-player {
+        grid-template-columns: repeat(2, 1fr);
     }
-    hr{
+
+    hr {
         margin: 0 20px;
     }
-    .blogs-heading{
+
+    .blogs-heading {
         padding: 20px 50px;
         font-size: 4vw;
     }
 
     /* Part 2 section 01 */
-    .top-blogSection{
+    .top-blogSection {
         padding: 10px 40px;
         grid-template-columns: repeat(1, 1fr);
         gap: 15px;
     }
-    .blog-image img{
+
+    .blog-image img {
         width: 100%;
     }
-    
-    /* Courses Section */
-.latest-couresall{
-    padding: 20px 30px;
-    grid-template-columns: repeat(1,1fr);
 
-}
+    /* Courses Section */
+    .latest-couresall {
+        padding: 20px 30px;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
     /* Footer */
-    footer{
+    footer {
         padding: 35px 0;
     }
-    .footer-logo h4{
+
+    .footer-logo h4 {
         font-size: 4.3vw;
     }
-    .footer{
+
+    .footer {
         font-size: 3vw;
     }
 }
@@ -248,52 +280,59 @@ footer{
 /* Tablet and Landscape Devices Width min 577px
    and maximum 992px */
 @media only screen and (min-width:577px) and (max-width:992px) {
-     /* Header Section */
-     .header{
+
+    /* Header Section */
+    .header {
         padding: 10px 100px;
         align-items: center;
     }
-    .header-heading{
+
+    .header-heading {
         font-size: 4.5vw;
     }
 
-        /* Main Section 01 */
-        .blogs{
-            margin: 10px 5px;
-        }
-        .top-player{
-            grid-template-columns: repeat(3,1fr);
-        }
-        hr{
-            margin: 0 20px;
-        }
-        .blogs-heading{
-            padding: 20px 50px;
-            font-size: 3vw;
-        }
+    /* Main Section 01 */
+    .blogs {
+        margin: 10px 5px;
+    }
 
-          /* Part 2 section 01 */
-    .top-blogSection{
+    .top-player {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    hr {
+        margin: 0 20px;
+    }
+
+    .blogs-heading {
+        padding: 20px 50px;
+        font-size: 3vw;
+    }
+
+    /* Part 2 section 01 */
+    .top-blogSection {
         padding: 10px 40px;
 
     }
 
 
-        /* Courses Section */
-.latest-couresall{
-    padding: 20px 30px;
-    grid-template-columns: repeat(2,1fr);
+    /* Courses Section */
+    .latest-couresall {
+        padding: 20px 30px;
+        grid-template-columns: repeat(2, 1fr);
 
-}
+    }
 
- /* Footer */
- footer{
-    padding: 35px 0;
-}
-.footer-logo h4{
-    font-size: 2.2vw;
-}
-.footer{
-    font-size: 2vw;
-}
+    /* Footer */
+    footer {
+        padding: 35px 0;
+    }
+
+    .footer-logo h4 {
+        font-size: 2.2vw;
+    }
+
+    .footer {
+        font-size: 2vw;
+    }
 }
