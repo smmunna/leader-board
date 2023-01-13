@@ -50,8 +50,73 @@ header{
     list-style-type: none;
 }
 
+/* 
+    Main Section
+    section 01
+*/
+.blogs{
+    margin: 30px 285px;
+    background-color: var(--headerPrimaryColor);
+    border-radius: 12px;
+}
 
+.blogs-heading{
+    padding: 20px 100px;
+    font-weight: bold;
+    color: #562EFF;
+    font-size: 1.2vw;
+}
+.top-player{
+    /* padding: 10px 20px; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.players{
+    font-weight: bold;
+    margin:20px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.players .img img{
+    height: 50px;
+    width: 50px;
+}
 
+hr{
+    border: 2px solid rgb(160, 158, 158);
+    margin: 0 100px;
+}
+
+/* section 01 second part */
+.top-blogSection{
+    padding: 15px 100px;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+}
+.blog-image img{
+    height: 117px;
+    width: 177px;
+    border-radius: 12px;
+}
+
+.top-blog1{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.blog-heading{
+    font-weight:bold;
+}
+.blog-author{
+    margin-top: 20px;
+    color: #5e585881;
+}
 
 
 /* --------------------
@@ -67,6 +132,33 @@ header{
     .header-heading{
         font-size: 4.5vw;
     }
+
+    /* Main Section 01 */
+    .blogs{
+        margin: 10px 5px;
+    }
+    .top-player{
+        grid-template-columns: repeat(2,1fr);
+    }
+    hr{
+        margin: 0 20px;
+    }
+    .blogs-heading{
+        padding: 20px 50px;
+        font-size: 4vw;
+    }
+
+    /* Part 2 section 01 */
+    .top-blogSection{
+        padding: 10px 40px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+    .blog-image img{
+        width: 100%;
+    }
+    
+    
 }
 
 /* Tablet and Landscape Devices Width min 577px
@@ -79,5 +171,26 @@ header{
     }
     .header-heading{
         font-size: 4.5vw;
+    }
+
+        /* Main Section 01 */
+        .blogs{
+            margin: 10px 5px;
+        }
+        .top-player{
+            grid-template-columns: repeat(3,1fr);
+        }
+        hr{
+            margin: 0 20px;
+        }
+        .blogs-heading{
+            padding: 20px 50px;
+            font-size: 3vw;
+        }
+
+          /* Part 2 section 01 */
+    .top-blogSection{
+        padding: 10px 40px;
+
     }
 }
