@@ -143,7 +143,9 @@ hr {
 .course-image img {
     width: 100%;
 }
-
+.course-subheading{
+    color: red;
+}
 .fa-solid {
     color: rgb(244, 189, 9);
 }
