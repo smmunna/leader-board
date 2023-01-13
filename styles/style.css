@@ -36,7 +36,7 @@ header{
 }
 .header-logo img{
     height: 50px;
-    width: 40px;
+    width: 50px;
 }
 
 .nav-item{
@@ -158,6 +158,36 @@ hr{
     display: flex;
     align-items: center;
 }
+
+
+/* Footer Section */
+footer{
+    padding: 55px 0;
+    background-color: black;
+    color: white;
+}
+.footer-logo{
+    display: flex;
+    gap: 10px;
+}
+.footer-logo img{
+    height: 50px;
+    width: 40px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+}
+.footer-author a{
+    text-decoration: none;
+    color: red;
+}
+.footer-author a:hover{
+    color: yellowgreen;
+}
 /* --------------------
     Responsive Design
 -----------------------*/
@@ -203,7 +233,16 @@ hr{
     grid-template-columns: repeat(1,1fr);
 
 }
-    
+    /* Footer */
+    footer{
+        padding: 35px 0;
+    }
+    .footer-logo h4{
+        font-size: 4.3vw;
+    }
+    .footer{
+        font-size: 3vw;
+    }
 }
 
 /* Tablet and Landscape Devices Width min 577px
@@ -245,5 +284,16 @@ hr{
     padding: 20px 30px;
     grid-template-columns: repeat(2,1fr);
 
+}
+
+ /* Footer */
+ footer{
+    padding: 35px 0;
+}
+.footer-logo h4{
+    font-size: 2.2vw;
+}
+.footer{
+    font-size: 2vw;
 }
 }
